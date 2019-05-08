@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-local {
+    background: url('img/bg-local.jpg') no-repeat;
+    background-size: 100%;
+}
+.navbar{
+    margin-bottom: 0 !important;
+}
+
+.box{
+    background-color: black;
+    border-radius: 15px;
+    background: rgba(0,0,0,.6);
+}
+
+.carousel {
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+}
+
+
+#circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.loader-pro {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+    border: 6px solid #162534;
+    border-top: 6px solid #09f;
+    border-radius: 50%;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}
+
+/** MODAL STYLING **/
+
+.modal-content {
+    border-radius: 0px;
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.7);
+}
+
+.modal-backdrop.show {
+    opacity: 0.75;
+}
+
+
+
+.container input[type="file"] {
+
+}
+.custom-upload {
+    border: 1px solid #33b5e5;
+    color: #1266f1;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.custom-upload:hover {
+    border: 1px solid #33b5e5;
+    color: #ffffff;
+    background-color: #33b5e5;
+    cursor: pointer;
+}
+
+
+.image-view {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.custom-link {
+    border: 2px solid #1266f1;
+    border-radius: 20px;
+}
+
+.custom-link:hover {
+    background-color: #1266f1;
+    color: #fff;
+}
+
+.custom-map-link {
+    border: 2px solid #FF3CBE;
+    border-radius: 20px;
+    color: #FF3CBE;
+}
+
+.custom-map-link:hover {
+    background-color: #FF3CBE;
+    color: #fff;
+}
+
+.cr img {
+    height: 15rem ;
+    width: 21rem ;
+}
+
+.custom-academic {
+    border: 2px solid #1266f1;
+    border-radius: 20px;
+    font-size: 2em;
+    background-color: #ffffff;
+    color: #1266f1 !important;
+}
+
+.custom-academic:hover {
+    background-color: #1266f1;
+    color: #fff !important;
+}
+
+.cr-box{
+    background-color: black;
+    border-radius: 15px;
+    background: rgba(0,0,0,.6);
+    margin-top: 17rem;
+    color: white;
+}
+
+.cr-box h1{
+    font-size: 3.5em;
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 880px) {
+    .carousel {
+        margin-top: 5rem;
+        height: 300px;
+    }
+
+    .main img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .cr img {
+        height: 14rem ;
+        width: 19rem ;
+    }
+
+    .custom-academic {
+        font-size: 1.2em;
+    }
+
+    .cr-box {
+        margin-top: 14rem;
+    }
+
+    .th-thumb {
+        height: 120px !important;
+        margin-left: 120px;
+    }
+    .cust{
+        text-align: center;
+    }
+    .cust h4 {
+        font-size: 1.3em;
+    }
+    .cust p {
+        font-size: 0.9em;
+    }
+    .dd-btn {
+        margin-top: 0px !important;
+    }
+
+}
+
+
